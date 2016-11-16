@@ -2,9 +2,16 @@
   <h1>My Open Source</h1>
 
   <div class="events">
+    <h5>Search OS Events </h5>
 
     <div class="search_events">
+      <%= form_for :welcome, :url => events_path do |form| %>
 
+      <div>
+        <%= form.label :zip_code %>
+        <%= form.text_field :zip_code %>
+      </div>
+      <%end%>
     </div>
 
   </div>
