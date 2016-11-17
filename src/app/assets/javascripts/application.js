@@ -12,4 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require react
+//= require react_ujs
+//= require materialize
+//= require components
 //= require_tree .
