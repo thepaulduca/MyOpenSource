@@ -23,6 +23,8 @@ class Events extends React.Component {
   }
 
   render() {
+    let events = this.state.eventList
+
     return(
       <div className="events">
         <h5>Search OS Events </h5>
@@ -30,6 +32,9 @@ class Events extends React.Component {
           <input type="text" name="zip" placeholder="zip code"/>
           <input type="submit" value="search"/>
         </form>
+        <ul>
+           {events.map((event, i) => <Event data = {events} key={i}/>)}
+        </ul>
       </div>
     )
   }
