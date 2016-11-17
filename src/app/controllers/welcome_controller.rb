@@ -8,6 +8,7 @@ class WelcomeController < ApplicationController
 
   def events
     if request.xhr?
+      puts params
       response = open('https://api.meetup.com/find/topics?key=263d71513f6e51917279201a185875&sign=true&photo-host=public&query=open-source&page=20')
       response_hash = JSON.parse(response.read)
 
