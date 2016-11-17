@@ -3,17 +3,10 @@
 
   <div class="events">
     <h5>Search OS Events </h5>
-
-    <div class="search_events">
-      <%= form_for :welcome, :url => events_path do |form| %>
-
-      <div>
-        <%= form.label :zip_code %>
-        <%= form.text_field :zip_code %>
-      </div>
-      <%end%>
-    </div>
-
+    <form class="" action="welcome/events" method="get">
+      <input type="text" name="zip" placeholder="zip code"/>
+      <input type="submit" value="search"/>
+    </form>
   </div>
 
 </div>
